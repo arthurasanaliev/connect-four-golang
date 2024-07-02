@@ -30,7 +30,7 @@ func (g *Game) Start() {
 			fmt.Println("Invalid move, try again.")
 			continue
 		}
-		if g.grid.CheckWin() { // can be optimized
+		if g.grid.CheckWin() {
 			g.grid.Display()
 			fmt.Printf("%s wins!\n", g.currentPlayer.name)
 			return
